@@ -1,0 +1,81 @@
+
+html, body, #root {
+  height: 100%;
+  //width: 100%;
+  position: relative;
+
+}
+
+body {
+  height: 100%;
+
+}
+
+.Cont {
+  background-color: white;
+  height: 100%;
+
+  .Cont-main {
+    margin: 20px 12px 20px 12px;
+  }
+
+}
+
+
+.cont-header {
+  display: inline-flex;
+
+  header-title {
+
+    display: flex !important;
+  }
+}
+
+.title {
+  font-weight: bold;
+
+  .first {
+    color: royalblue;
+  }
+
+  .second {
+    color: black;
+  }
+
+  .pointer_img {
+    vertical-align: middle;
+  }
+
+  font-size: 2em;
+}
+
+.cont-body {
+  //height: 80%;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.footer {
+  margin: 0px 5px 0px 5px;
+  //height: 20%;
+}
+
+.question {
+  //font-size: 10em;
+  //color: black;
+}
+
+.btn-result {
+  //background: url("../images/common/Group 1381.png") no-repeat;
+  width: 100%;
+  height: auto;
+  //background-position: top right;
+  //background-repeat: no-repeat;
+  //background-color: firebrick;
+  //border-radius: 5px;
+  //width: 90%;
+  //height: 40%;
+
+}
