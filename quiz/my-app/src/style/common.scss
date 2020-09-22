@@ -3,21 +3,35 @@ html, body, #root {
   height: 100%;
   //width: 100%;
   position: relative;
+  overflow: hidden;
+  display: flex;
 
 }
 
 body {
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
 .Cont {
   background-color: white;
   height: 100%;
+  width: 100%;
 
   .Cont-main {
-    margin: 20px 12px 20px 12px;
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    img {
+      vertical-align: middle;
+      //position: absolute;
+    }
   }
+
 
 }
 
@@ -25,14 +39,19 @@ body {
 .cont-header {
   display: inline-flex;
 
-  header-title {
-
+  .header-title {
     display: flex !important;
+  }
+
+  img {
+    height: 64px;
+    width: auto;
   }
 }
 
 .title {
   font-weight: bold;
+  position: relative;
 
   .first {
     color: #007298;
@@ -43,15 +62,20 @@ body {
   }
 
   .pointer_img {
-    vertical-align: middle;
+    vertical-align: top;
+    //margin-bottom: 20px;
+    position: absolute;
   }
 
   font-size: 2em;
 }
 
 .cont-body {
+
   //height: 80%;
-  img{
+  font-size: 1.1em;
+
+  img {
     width: 100%;
     height: auto;
   }
@@ -59,7 +83,8 @@ body {
 
 .footer {
   margin: 0px 5px 0px 5px;
-  //height: 20%;
+  position: absolute;
+  bottom: 5px;
 }
 
 .question {
@@ -71,6 +96,7 @@ body {
   //background: url("../images/common/Group 1381.png") no-repeat;
   width: 100%;
   height: auto;
+  cursor: pointer;
   //background-position: top right;
   //background-repeat: no-repeat;
   //background-color: firebrick;
