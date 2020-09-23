@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Popconfirm, message, Button } from 'antd';
 import styled from 'styled-components'
 
 // import q1 from '../images/Q1/Group 1379.png'
@@ -21,8 +22,11 @@ width: 100%;
 //}
 
 `
-
 const Question1 = () => {
+
+    function confirm() {
+        message.info('Clicked on Yes.');
+    }
 
     return (
         <Question1Styled>
@@ -48,7 +52,19 @@ const Question1 = () => {
                     첫 번째 장소,
                     {/*</div>*/}
                     {/*<div >*/}
-                    <img className='pointer_img' src={point}/>
+                    <div className='location'>
+                        <img className='pointer_img' src={point}/>
+                        <Popconfirm
+                            placement="bottomRight"
+                            onConfirm={confirm}
+                            title='dddddddddddddddddddfadf'
+                            okText="Yes"
+                            cancelText="No"
+                        >
+                            <Button>위치보기</Button>
+                        </Popconfirm>
+                    </div>
+
                     {/*</div>*/}
                 </div>
 

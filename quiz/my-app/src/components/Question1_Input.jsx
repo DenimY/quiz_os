@@ -5,7 +5,7 @@ import q1 from '../images/Q1/Group 1379@2x.png'
 import point from '../images/common/Group 49.png'
 import quiz from '../images/Q1/Rectangle 23.png'
 
-import answerImg from '../images/Q1/Group 1383@2x.png'
+import btnInput from '../images/common/Rectangle 20@2x.png'
 
 
 const Question1_answerStyled = styled.div`
@@ -59,18 +59,9 @@ const Question1_answer = () => {
 
                 {/*question image */}
                 <div className='cont-body'>
-                    <div className='Answer'>
-                        <span>'송악'</span>
-                        <span>정답입니다</span>
+                    <div className='question'>
+                        야생화 공원에서 다음 식물의 이름을 찾아보세요.
                     </div>
-                    <img className='' src={answerImg}>
-                    </img>
-                    <div className='덩굴성 식물들은 주변의 나무를 말려 죽이는 습성이 있지만, 송악은 자신이 의지한 나무를 죽이지 않고 공생합니다.'>
-
-                    </div>
-                </div>
-                <div>
-
                 </div>
             </div>
 
