@@ -1,15 +1,21 @@
 
 html, body, #root {
-  height: 100%;
-  //width: 100%;
-  position: relative;
-  overflow: hidden;
-  display: flex;
+  height: auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  //overflow: auto;
+  //display: flex;
+  //margin: auto;
 
 }
 
 body {
-  height: 100%;
+  //height: 100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 
@@ -17,7 +23,7 @@ body {
 
 .Cont {
   background-color: white;
-  height: 100%;
+  //height: 100%;
   width: 100%;
 
   .Cont-main {
@@ -52,9 +58,13 @@ body {
 .title {
   font-weight: bold;
   position: relative;
+  padding: 30px 0 30px 0;
+
 
   .first {
     color: #007298;
+    margin-left: 51px;
+    //margin-bottom: -3px;
   }
 
   .second {
@@ -62,9 +72,8 @@ body {
   }
 
   .pointer_img {
-    vertical-align: top;
-    //margin-bottom: 20px;
-    position: absolute;
+    vertical-align: middle;
+    //position: absolute;
   }
 
   font-size: 2em;
@@ -75,33 +84,80 @@ body {
   //height: 80%;
   font-size: 1.1em;
 
+
+  .question {
+    //font-size: 10em;
+    color: black;
+  }
+
   img {
     width: 100%;
     height: auto;
   }
+
+  .hint-text {
+    font-size: 14px;
+  }
 }
 
 .footer {
-  margin: 0px 5px 0px 5px;
-  position: absolute;
-  bottom: 5px;
+
+  input:focus {
+      outline: none
+    }
+
+  line-height: 20px;
+  input{
+
+  }
+
+  .bottom {
+    margin: 0px 0px 0px -3px;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+  }
+
+
+  .input-answer {
+    //bottom: 0;
+    //top: 0;
+    vertical-align: middle;
+    margin-top: 20px;
+  }
+
+  .btn-Input-img {
+    width: 90%;
+    height: 73px;
+    background-position-y: 8px;
+    background-image: url("../images/common/Rectangle 20@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 0;
+    text-align: center;
+
+    input:focus {
+      outline: none
+    }
+
+    font-size: 40px;
+    color: white;
+
+  }
+
+
+  .btn-result {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    //background-position: top right;
+    //background-repeat: no-repeat;
+    //background-color: firebrick;
+    //border-radius: 5px;
+    //width: 90%;
+    //height: 40%;
+
+  }
 }
 
-.question {
-  //font-size: 10em;
-  //color: black;
-}
 
-.btn-result {
-  //background: url("../images/common/Group 1381.png") no-repeat;
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-  //background-position: top right;
-  //background-repeat: no-repeat;
-  //background-color: firebrick;
-  //border-radius: 5px;
-  //width: 90%;
-  //height: 40%;
-
-}

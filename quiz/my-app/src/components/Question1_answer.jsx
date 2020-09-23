@@ -1,18 +1,14 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import styled from 'styled-components'
 
-// import q1 from '../images/Q1/Group 1379.png'
 import q1 from '../images/Q1/Group 1379@2x.png'
 import point from '../images/common/Group 49.png'
 import quiz from '../images/Q1/Rectangle 23.png'
 
-import btn1 from '../images/common/Group 1380@2x.png'
-
-import Question1_answer from "./Question1_answer";
-import {Link} from "react-router-dom";
+import btnInput from '../images/common/Rectangle 20@2x.png'
 
 
-const Question1Styled = styled.div`
+const Question1_answerStyled = styled.div`
 height: 100%;
 width: 100%;
 
@@ -22,10 +18,10 @@ width: 100%;
 
 `
 
-const Question1 = () => {
+const Question1_answer = () => {
 
     return (
-        <Question1Styled>
+        <Question1_answerStyled>
 
             <div className='cont-header'>
                 <div className='header-title' style={{display: "flex"}}>
@@ -64,35 +60,23 @@ const Question1 = () => {
                 {/*question image */}
                 <div className='cont-body'>
                     <div className='question'>
-                        야생화공원의 길을 걸으며 주변의 야생화를 둘러 보세요. 그리고 다음 식물의 이름을 찾아보세요.
+                        야생화 공원에서 다음 식물의 이름을 찾아보세요.
                     </div>
-                    <img className='' src={quiz}>
-                    </img>
-                    <div className='hint-text'>
-                        [힌트] 공원의 안의 팻말들을 잘 찾아보세요
-                    </div>
-                </div>
-                <div>
-
                 </div>
             </div>
 
             <div className='footer'>
-                {/*<input type='Button' className='btn-result' value='정답 입력하기'/>*/}
-                <Link to='/answer/1'>
-                    <input type='image' src={btn1} className='btn-result' value='정답 입력하기' onClick={() => {
-                        return (
-                            <div>
-                            </div>
-                        )
-                    }}/>
-                </Link>
+                <div className='input-answer'>
 
+                    {/*<input type='Button' className='btn-result' value='정답 입력하기'/>*/}
+                    <input type='number' pattern="\d*" className='btn-Input-img'/>
+                    {/*<input type='image' src={btnInput} className='btn-result'value='정답 입력하기'/>*/}
+                </div>
             </div>
-        </Question1Styled>
+        </Question1_answerStyled>
     )
 
 
 }
 
-export default Question1;
+export default Question1_answer;
