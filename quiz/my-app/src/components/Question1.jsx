@@ -1,15 +1,16 @@
 import React, {useState, useEffect} from "react";
-import { Popconfirm, message, Button } from 'antd';
+import {Popconfirm, message, Button} from 'antd';
 import styled from 'styled-components'
+import Modal from "../Containers/Modal";
 
-// import q1 from '../images/Q1/Group 1379.png'
-import q1 from '../images/Q1/Group 1379@2x.png'
-import point from '../images/common/Group 49.png'
+//image
+import q1 from '../images/Q1/Group 1437@2x.png'
+import point from '../images/common/Group 1436.png'
 import quiz from '../images/Q1/Rectangle 23.png'
 
 import btn1 from '../images/common/Group 1380@2x.png'
 
-import Question1_answer from "./Question1_answer";
+import map from "../images/Q1/Rectangle 23@2x.png";
 import {Link} from "react-router-dom";
 
 
@@ -20,13 +21,15 @@ width: 100%;
 //.Cont {
 //
 //}
-
 `
 const Question1 = () => {
 
     function confirm() {
         message.info('Clicked on Yes.');
     }
+
+
+    const [isVisible, setIsVisible] = useState(false);
 
     return (
         <Question1Styled>
@@ -46,41 +49,66 @@ const Question1 = () => {
                 </div>
             </div>
 
+
+            {/*title*/}
             <div className='title'>
-                <div className='first'>
-                    {/*<div>*/}
-                    첫 번째 장소,
-                    {/*</div>*/}
-                    {/*<div >*/}
-                    <div className='location'>
-                        <img className='pointer_img' src={point}/>
-                        <Popconfirm
-                            placement="bottomRight"
-                            onConfirm={confirm}
-                            title='dddddddddddddddddddfadf'
-                            okText="Yes"
-                            cancelText="No"
-                        >
-                            <Button>위치보기</Button>
-                        </Popconfirm>
-                    </div>
-
-                    {/*</div>*/}
+                <div className='title-text'>
+                    <span className='first'>첫 번째 장소,</span><br/>
+                    <span className='second'>야생화공원</span>
                 </div>
+                <div className='location'>
 
-                <div className='second'>
-                    야생화공원
+
+                    <Modal visible={isVisible}
+                           closable={true}
+                           onClose={() =>{setIsVisible(false)}}
+                    ><img style={{width: '100%'}} src={map}/>
+                    </Modal>
+                    <img className='pointer_img' src={point} onClick={() => {
+                        setIsVisible(true)
+                        // ModalPage()
+                        return (
+                            <>
+
+
+                                {/*<ModalOverlay visible={true}/>*/}
+                                {/*<ModalWrapper*/}
+                                {/*    tabIndex="-1"*/}
+                                {/*    visible={true}*/}
+                                {/*>*/}
+                                {/*    /!*<ModalInner tabIndex="0" className="modal-inner" size={size}>*!/*/}
+                                {/*    /!*    {closable && <CloseButton className="modal-close" onClick={close}/>}*!/*/}
+                                {/*    /!*    {children}*!/*/}
+                                {/*    /!*</ModalInner>*!/*/}
+                                {/*</ModalWrapper>*/}
+                            </>
+
+                            // <Modal visible={true}>hello</Modal>
+                        )
+
+                    }}/>
+
+                    {/*<Popconfirm
+                        placement="bottomRight"
+                        onConfirm={confirm}
+                        title={map}
+                        okText="Yes"
+                        cancelText="No"
+                    >
+                        <img className='pointer_img' src={point}/>
+                    </Popconfirm>*/}
                 </div>
             </div>
 
 
             <div className='Cont-main'>
 
-
                 {/*question image */}
                 <div className='cont-body'>
                     <div className='question'>
-                        야생화공원의 길을 걸으며 주변의 야생화를 둘러 보세요. 그리고 다음 식물의 이름을 찾아보세요.
+                        <span>야생화공원의 길을 걸으며 주변에</span>
+                        <span>어떤 야생화가 있는지 둘러보세요.</span>
+                        <span>그리고 다음 식물의 이름을 찾아보세요</span>
                     </div>
                     <img className='' src={quiz}>
                     </img>
@@ -95,7 +123,7 @@ const Question1 = () => {
 
             <div className='footer'>
                 {/*<input type='Button' className='btn-result' value='정답 입력하기'/>*/}
-                <Link to='/answer/1'>
+                <Link to='/1/input'>
                     <input type='image' src={btn1} className='btn-result' value='정답 입력하기' onClick={() => {
                         return (
                             <div>

@@ -1,4 +1,15 @@
 @import '~antd/dist/antd.css';
+@font-face {
+  @font-family:NanumSquareRound;
+  src: url("fonts/NanumSquareRoundB.ttf");
+  src: url("fonts/NanumSquareRoundEB.ttf");
+  src: url("fonts/NanumSquareRoundL.ttf");
+  src: url("fonts/NanumSquareRoundR.ttf");
+}
+
+html, body, #root {
+  font-family: NanumSquareRound;
+}
 
 .App {
   text-align: center;

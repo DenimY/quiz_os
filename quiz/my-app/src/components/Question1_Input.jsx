@@ -1,14 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from 'styled-components'
 
-import q1 from '../images/Q1/Group 1379@2x.png'
-import point from '../images/common/Group 49.png'
-import quiz from '../images/Q1/Rectangle 23.png'
+import Modal from '../Containers/Modal'
 
-import btnInput from '../images/common/Rectangle 20@2x.png'
+// import {history} from 'react-router-dom';
 
+import q1 from '../images/Q1/Group 1437@2x.png'
 
-const Question1_answerStyled = styled.div`
+const Question1_InputStyled = styled.div`
 height: 100%;
 width: 100%;
 
@@ -18,10 +17,25 @@ width: 100%;
 
 `
 
-const Question1_answer = () => {
+const Question1_Input = ({history}) => {
+
+    const [answer, setAnswer] = useState("");
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            let url = ''
+            if (answer.trim() === '송악') {
+                alert("정답")
+                url = '/1/correct'
+            } else {
+                alert('오답 : ' + answer)
+                url = '/1/wrong'
+            }
+            history.push(url);
+        }
+    }
 
     return (
-        <Question1_answerStyled>
+        <Question1_InputStyled>
 
             <div className='cont-header'>
                 <div className='header-title' style={{display: "flex"}}>
@@ -39,17 +53,9 @@ const Question1_answer = () => {
             </div>
 
             <div className='title'>
-                <div className='first'>
-                    {/*<div>*/}
-                    첫 번째 장소,
-                    {/*</div>*/}
-                    {/*<div >*/}
-                    <img className='pointer_img' src={point}/>
-                    {/*</div>*/}
-                </div>
-
-                <div className='second'>
-                    야생화공원
+                <div>
+                    <span className='first'>첫 번째 장소,</span><br/>
+                    <span className='second'>야생화공원</span>
                 </div>
             </div>
 
@@ -69,14 +75,15 @@ const Question1_answer = () => {
                 <div className='input-answer'>
 
                     <span>숫자만 입력해주세요!</span>
-                    <input type='number' pattern="\d*" className='btn-Input-img'/>
+                    {/*<input type='number' pattern="\d*" className='btn-Input-img' onKeyPress={handleKeyPress}/>*/}
+                    <input type='text' className='btn-Input-img' onKeyPress={handleKeyPress} onChange={(e) => setAnswer(e.target.value)}/>
                     {/*<input type='image' src={btnInput} className='btn-result'value='정답 입력하기'/>*/}
                 </div>
             </div>
-        </Question1_answerStyled>
+        </Question1_InputStyled>
     )
 
 
 }
 
-export default Question1_answer;
+export default Question1_Input;

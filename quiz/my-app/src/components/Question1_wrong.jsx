@@ -1,12 +1,12 @@
 import React from "react";
 import styled from 'styled-components'
 
-import q1 from '../images/Q1/Group 1379@2x.png'
-import point from '../images/common/Group 49.png'
+import q1 from '../images/Q1/Group 1437@2x.png'
+import point from '../images/common/Group 1436@2x.png'
 import quiz from '../images/Q1/Rectangle 23.png'
 
 import btnInput from '../images/common/Rectangle 20@2x.png'
-
+import {Link} from "react-router-dom";
 
 const Question1_answerStyled = styled.div`
 height: 100%;
@@ -39,17 +39,9 @@ const Question1_answer = () => {
             </div>
 
             <div className='title'>
-                <div className='first'>
-                    {/*<div>*/}
-                    첫 번째 장소,
-                    {/*</div>*/}
-                    {/*<div >*/}
-                    <img className='pointer_img' src={point}/>
-                    {/*</div>*/}
-                </div>
-
-                <div className='second'>
-                    야생화공원
+                <div>
+                    <span className='first'>첫 번째 장소,</span><br/>
+                    <span className='second'>야생화공원</span>
                 </div>
             </div>
 
@@ -65,8 +57,9 @@ const Question1_answer = () => {
 
             <div className='footer'>
                 <div className='input-answer'>
-
-                    <input type='number' pattern="\d*" className='btn-backQuestion-img'/>
+                    <Link to='/1'>
+                        <input type='img' pattern="\d*" className='btn-backQuestion-img'/>
+                    </Link>
                 </div>
             </div>
         </Question1_answerStyled>
