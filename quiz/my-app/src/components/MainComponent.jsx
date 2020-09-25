@@ -4,11 +4,38 @@ import styled from 'styled-components'
 import {BrowserRouter, Switch, Route, Redirect} from "react-router-dom";
 
 
-import Question1 from './Question1'
-import Question1_Input from "./Question1_Input";
-import Question1_wrong from "./Question1_wrong";
-import Question1_answer from "./Question1_answer";
-import map from "../images/Q1/Rectangle 23@2x.png";
+import Question1_main from './Q1/Question1_main'
+import Question1_Input from "./Q1/Question1_Input";
+import Question1_wrong from "./Q1/Question1_wrong";
+import Question1_answer from "./Q1/Question1_answer";
+
+
+import Question2_main from './Q2/Question2_main'
+import Question2_Input from "./Q2/Question2_Input";
+import Question2_wrong from "./Q2/Question2_wrong";
+import Question2_answer from "./Q2/Question2_answer";
+
+
+import Question3_main from './Q3/Question3_main'
+import Question3_Input from "./Q3/Question3_Input";
+import Question3_wrong from "./Q3/Question3_wrong";
+import Question3_answer from "./Q3/Question3_answer";
+
+
+import Question4_main from './Q4/Question4_main'
+import Question4_Input from "./Q4/Question4_Input";
+import Question4_wrong from "./Q4/Question4_wrong";
+import Question4_answer from "./Q4/Question4_answer";
+
+
+import Question5_main from './Q5/Question5_main'
+import Question5_Input from "./Q5/Question5_Input";
+import Question5_wrong from "./Q5/Question5_wrong";
+import Question5_answer from "./Q5/Question5_answer";
+
+
+
+import map from "../images/Q1/Quiz@2x.png";
 
 const MainComponentStyled = styled.div`
 //height: 100%;
@@ -40,10 +67,32 @@ class MainComponent extends Component {
                 </div>
                 <BrowserRouter>
                     <Switch>
-                        <Route exact path='/1' component={Question1}/>
+                        <Route exact path='/1' component={Question1_main}/>
                         <Route exact path='/1/input' component={Question1_Input}/>
                         <Route exact path='/1/wrong' component={Question1_wrong}/>
                         <Route exact path='/1/correct' component={Question1_answer}/>
+
+                        <Route exact path='/2' component={Question2_main}/>
+                        <Route exact path='/2/input' component={Question2_Input}/>
+                        <Route exact path='/2/wrong' component={Question2_wrong}/>
+                        <Route exact path='/2/correct' component={Question2_answer}/>
+
+                        <Route exact path='/3' component={Question3_main}/>
+                        <Route exact path='/3/input' component={Question3_Input}/>
+                        <Route exact path='/3/wrong' component={Question3_wrong}/>
+                        <Route exact path='/3/correct' component={Question3_answer}/>
+
+                        <Route exact path='/4' component={Question4_main}/>
+                        <Route exact path='/4/input' component={Question4_Input}/>
+                        <Route exact path='/4/wrong' component={Question4_wrong}/>
+                        <Route exact path='/4/correct' component={Question4_answer}/>
+
+                        <Route exact path='/5' component={Question5_main}/>
+                        <Route exact path='/5/input' component={Question5_Input}/>
+                        <Route exact path='/5/wrong' component={Question5_wrong}/>
+                        <Route exact path='/5/correct' component={Question5_answer}/>
+
+
                         <Redirect path='*' to='/1'/>
                     </Switch>
                 </BrowserRouter>
