@@ -5,7 +5,7 @@ import titleImg from '../../images/Q2/Title@2x.png'
 import quiz from '../../images/Q2/Quiz@2x.png'
 
 
-import map from "../../images/Q2/Quiz@2x.png";
+import map from "../../images/Q2/Q2_map.png";
 
 import QuestionTemplate from '../defaultTemplate/QuestionTemplate'
 
@@ -24,6 +24,7 @@ const Question1_main = () => {
                 '단어를 찾아 입력하세요(세글자)'
                 }
                 map={map}
+                mapText={'야생화공원의 길을 따라 8도 소나무 단지에서 \'정이품송 맏아들나무\'안내판을 찾아보세요!'}
                 hintUrl={'/2/hint'}
                 url={'/2/input'}
             />

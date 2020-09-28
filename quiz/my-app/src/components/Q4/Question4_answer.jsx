@@ -1,13 +1,12 @@
 import React from "react";
 import styled from 'styled-components'
 
-import titleImg from '../../images/Q1/Title@2x.png'
-import quiz from '../../images/Q1/Quiz@2x.png'
-import answerImg from '../../images/Q1/Answer@2x.png'
+import titleImg from '../../images/Q4/Title@2x.png'
+import quiz from '../../images/Q4/Quiz@2x.png'
+import answerImg from '../../images/Q4/Answer@2x.png'
 
 import Question_answer from "../defaultTemplate/Question_answer";
-import QuestionTemplate from "../defaultTemplate/QuestionTemplate";
-import nextPageImg from '../../images/Q1/NextPage@2x.png'
+import nextPageImg from '../../images/Q4/NextPage@2x.png'
 
 
 const Question4_answerStyled = styled.div`
@@ -20,21 +19,19 @@ width: 100%;
 
 `
 
-const Question4_answer = () => {
+const Question4_answer = (props) => {
 
     return (
         <Question4_answerStyled>
             <Question_answer
-                title={'네 번째 장소,'}
-                title2={'야생화공원'}
+                title={props.location.state.title}
+                title2={props.location.state.title2}
                 titleImg={titleImg}
                 quizImg={quiz}
-                answer={'송악'}
+                answer={props.location.state.answerText}
                 nextPageImg={nextPageImg}
                 answerImg={answerImg}
-                answerText={'덩굴성 식물들은 주변의 나무를 말려 죽이는\n' +
-                '습성이 있지만, 송악은 자신이 의지한 나무를\n' +
-                '죽이지 않고 공생합니다.'}
+                answerText={'  옴개구리는 주름돌기개구리라고도 불리며 몸 길이는 4-5.5cm 가량입니다. 전국 하천에서 널리 서식하지만, 최근에는 하천의 요염으로 인해 개체수가 감소하고 있습니다.'}
                 url={'/5'}
 
             />

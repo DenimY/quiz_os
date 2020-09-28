@@ -1,9 +1,7 @@
 import React, {useState} from "react";
 import styled from 'styled-components'
 
-import q from '../../images/Q1/Title@2x.png'
 import Question_Input from "../defaultTemplate/Question_Input";
-import QuestionTemplate from "../defaultTemplate/QuestionTemplate";
 
 
 
@@ -17,17 +15,18 @@ width: 100%;
 
 `
 
-const Question4_Input = ({history}) => {
+const Question4_Input = (props) => {
 
     return (
         <Question4_InputStyled>
             <Question_Input
-                history={history}
-                urlNum= {'1'}
-                answerText={'송악'}
-                questionText={'야생화 공원에서 다음 식물의 이름을 찾아보세요.'}
-                title={'네 번째 장소,'}
-                title2={'야생화공원'}
+                title={props.location.state.title}
+                title2={props.location.state.title2}
+                titleImg={props.location.state.titleImg}
+                history={props.history}
+                urlNum= {'4'}
+                answerText={'옴개구리'}
+                questionText={' 남산의 연못에서 서식하고 있는 개구리는  산개구리, 참개구리 그리고 \'_____\'입니다. 빈칸에 들어갈 개구리의 이름은 무엇일까요?\n'}
             />
 
         </Question4_InputStyled>

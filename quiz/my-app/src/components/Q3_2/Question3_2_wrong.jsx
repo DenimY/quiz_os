@@ -2,35 +2,30 @@ import React from "react";
 import styled from 'styled-components'
 
 import Question_wrong from "../defaultTemplate/Question_wrong";
-import titleImg from "../../images/Q2/Title@2x.png";
+import titleImg from "../../images/Q3/Title@2x.png";
 
-const Question2_answerStyled = styled.div`
+const Question1_answerStyled = styled.div`
 height: 100%;
 width: 100%;
 
-//.Cont {
-//
-//}
-
 `
 
-const Question2_wrong = (props) => {
+const Question3_2_wrong = (props) => {
 
     return (
-        <Question2_answerStyled>
+        <Question1_answerStyled>
             <Question_wrong
                 title={props.location.state.title}
                 title2={props.location.state.title2}
                 titleImg={titleImg}
-                wrongText={'정답은 숫자입니다!'}
-                url={'/2'}
-                useHint={true}
+                wrongText={'다리 근처의 팻말을 잘 살펴보자!'}
+                url={'/3_2'}
             />
 
-        </Question2_answerStyled>
+        </Question1_answerStyled>
 )
 
 
 }
 
-export default Question2_wrong;
+export default Question3_2_wrong;

@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import Question_Input from "../defaultTemplate/Question_Input";
 
 
-
 const Question1_InputStyled = styled.div`
 height: 100%;
 width: 100%;
@@ -15,17 +14,18 @@ width: 100%;
 
 `
 
-const Question1_Input = ({history}) => {
+const Question1_Input = (props) => {
 
     return (
         <Question1_InputStyled>
             <Question_Input
-                history={history}
-                urlNum= {'1'}
+                history={props.history}
+                urlNum={'1'}
                 answerText={'송악'}
                 questionText={'야생화 공원에서 다음 식물의 이름을 찾아보세요.'}
-                title={'첫 번째 장소,'}
-                title2={'야생화공원'}
+                titleImg={props.location.state.titleImg}
+                title={props.location.state.title}
+                title2={props.location.state.title2}
             />
 
         </Question1_InputStyled>

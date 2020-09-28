@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Popconfirm, message, Button} from 'antd';
 import styled from 'styled-components'
-import Modal from "../../Containers/Modal";
 
 import btn1 from '../../images/common/InputAnswer@2x.png'
 
@@ -12,8 +10,15 @@ import TitleTemplate from "./TitleTemplate";
 const Question1Styled = styled.div`
 height: 100%;
 width: 100%;
+//position: absolute;
+
+img{
+//padding-left: 20px;
+//padding-right: 20px;
+}
 `
-const QuestionTemplate = ({title, title2, titleImg, quizImg, question, hint, map, hintUrl, url}) => {
+
+const QuestionTemplate = ({title, title2, titleImg, quizImg, quizImg2, question, hint, map, mapText, hintUrl, url, BtnAR}) => {
 
     /*const [inputUrl, setInputUrl] = ("");
     const [hintUrl, setHintUrl] = ("");
@@ -24,7 +29,6 @@ const QuestionTemplate = ({title, title2, titleImg, quizImg, question, hint, map
         setHintUrl({url}.hint + 'hint')
     }, [])*/
 
-
     return (
         <Question1Styled>
 
@@ -33,6 +37,7 @@ const QuestionTemplate = ({title, title2, titleImg, quizImg, question, hint, map
                 title={title}
                 title2={title2}
                 map={map}
+                mapText={mapText}
             />
 
 
@@ -40,11 +45,28 @@ const QuestionTemplate = ({title, title2, titleImg, quizImg, question, hint, map
 
                 {/*question image */}
                 <div className='cont-body'>
-                    <pre className='question'>
+                    <pre className='textBox'>
+                    <span className='question'>
                             {question}
+                    </span>
                     </pre>
-                    <img className='' src={quizImg}>
-                    </img>
+                    {
+                        quizImg2 != undefined ?
+                            (<div className={'imgDiv'}>
+                                <img src={quizImg}>
+                                </img>
+                                <div style={{width :'20px'}}></div>
+                                <img src={quizImg2}>
+                                </img>
+                            </div>)
+                            :
+                            (
+                                <div style={{paddingRight: '20px', paddingLeft: '20px'}}>
+                                    <img src={quizImg}>
+                                    </img>
+                                </div>)
+                    }
+
                     <p className='hint-text'>
                         {hint}
                     </p>
@@ -55,13 +77,50 @@ const QuestionTemplate = ({title, title2, titleImg, quizImg, question, hint, map
             </div>
 
             <div className='footer'>
-                <Link to={url}>
+                <Link to={{
+                    pathname: url,
+                    state: {
+                        title: title,
+                        title2: title2,
+                        titleImg: titleImg,
+                    }
+                }}>
                     <input type='image' src={btn1} className='btn-result'/>
                 </Link>
+
+                {
+                    {BtnAR}.BtnAR === undefined ?
+                        (<></>) : (
+                            <>
+                                <a href={'https://uplusar.page.link/ZWPp'}>
+                                    <input type='image' src={BtnAR} className='btn-result'/>
+                                </a>
+                                <Link to={{
+                                    pathname: url,
+                                    state: {
+                                        title: title,
+                                        title2: title2,
+                                        titleImg: titleImg,
+                                    }
+                                }}>
+                                    <span className={'aHrefText'}>AR이 안보여요</span>
+                                </Link>
+
+                            </>
+                        )
+                }
+
                 {
                     {hintUrl}.hintUrl === undefined ?
                         (<></>) : (
-                            <Link to={hintUrl}>
+                            <Link to={{
+                                pathname: hintUrl,
+                                state: {
+                                    title: title,
+                                    title2: title2,
+                                    titleImg: titleImg,
+                                }
+                            }}>
                                 <span className={'aHrefText'}>힌트가 더 필요해요!</span>
                             </Link>
                         )

@@ -7,6 +7,7 @@ import answerImg from '../../images/Q1/Answer@2x.png'
 
 import Question_answer from "../defaultTemplate/Question_answer";
 import nextPageImg from '../../images/Q1/NextPage@2x.png'
+import Question_Input from "../defaultTemplate/Question_Input";
 
 
 const Question1_answerStyled = styled.div`
@@ -19,16 +20,16 @@ width: 100%;
 
 `
 
-const Question1_answer = () => {
+const Question1_answer = (props) => {
 
     return (
         <Question1_answerStyled>
             <Question_answer
-                title={'첫 번째 장소,'}
-                title2={'야생화공원'}
-                titleImg={titleImg}
+                title={props.location.state.title}
+                title2={props.location.state.title2}
+                titleImg={props.location.state.titleImg}
                 quizImg={quiz}
-                answer={'송악'}
+                answer={props.location.state.answerText}
                 nextPageImg={nextPageImg}
                 answerImg={answerImg}
                 answerText={'덩굴성 식물들은 주변의 나무를 말려 죽이는\n' +

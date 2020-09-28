@@ -20,7 +20,7 @@ width: 100%;
 
 `
 
-const Question3_answer = (props) => {
+const Question3_2_answer = (props) => {
 
     return (
         <Question3_answerStyled>
@@ -31,13 +31,13 @@ const Question3_answer = (props) => {
                 quizImg={quiz}
                 answer={props.location.state.answerText}
                 nextPageImg={nextPageImg}
-                answerImg={answerImg}
-                answerText={'새홀리기는 멸종위기야생동식물\n' +
-                '2급으로 지정되어 보호받는 새입니다.\n' +
-                '매와 아주 비슷하게 생겼지만 크기가 조금 더 작고,\n' +
-                '배에 붉은 색을 띄고 있습니다.'}
-                url={'/3_2'}
-
+                // answerImg={answerImg}
+                answerText={'새홀리기처럼, 스픽스 마코 앵무새는 브라질에서 서\n' +
+                '식하는 멸종 위기 동물입니다. 야생동물들이 야\n' +
+                '생에서 잘 살아갈 수 있도록, 환경을 파괴하지 않\n' +
+                '고 보존하는 것이 중요합니다.'}
+                url={'/4'}
+                type={'B'}
             />
         </Question3_answerStyled>
     )
@@ -45,4 +45,4 @@ const Question3_answer = (props) => {
 
 }
 
-export default Question3_answer;
+export default Question3_2_answer;

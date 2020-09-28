@@ -15,12 +15,15 @@ width: 100%;
 
 `
 
-const Question2_Input = ({history}) => {
+const Question2_Input = (props) => {
 
     return (
         <Question2_InputStyled>
             <Question_Input
-                history={history}
+                title={props.location.state.title}
+                title2={props.location.state.title2}
+                titleImg={props.location.state.titleImg}
+                history={props.history}
                 urlNum= {'2'}
                 answerText={'103'}
                 questionText={'아래의 물음표에 들어가는 글자를\n' +
@@ -28,8 +31,6 @@ const Question2_Input = ({history}) => {
                 '정이품송 맏아들나무\' \n' +
                 '안내판을 찬은 후, 안내판에 물음표가 들어가는\n' +
                 '단어를 찾아 입력하세요.(세글자) '}
-                title={'두 번째 장소,'}
-                title2={'8도 소나무 단지'}
             />
 
         </Question2_InputStyled>
