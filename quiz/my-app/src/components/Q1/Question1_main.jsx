@@ -25,6 +25,7 @@ const Question1_main = () => {
                 map={map}
                 mapText={'육교를 건너 남산공원으로 진입 후, 체육시설과 지압보도를 지나 야생화공원으로 들어가세요!'}
                 url={'/1/input'}
+                url={'/1input'}
             />
         </>
     )

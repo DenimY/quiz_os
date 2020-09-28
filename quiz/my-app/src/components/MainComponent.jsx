@@ -80,7 +80,7 @@ class MainComponent extends Component {
                         <Route path='/main' component={StartPage}/>
                         <Route path='/end' component={EndPage}/>
 
-                        <Route path='/1/input' component={Question1_Input}/>
+                        <Route path='/1input' component={Question1_Input}/>
                         <Route path='/1/wrong' component={Question1_wrong}/>
                         <Route path='/1/correct' component={Question1_answer}/>
                         <Route path='/1' component={Question1_main}/>

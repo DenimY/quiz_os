@@ -16,7 +16,7 @@ width: 100%;
 
 `
 
-const Question1_Input = ({props}) => {
+const Question1_Input = (props) => {
 
     return (
         <>
@@ -24,7 +24,7 @@ const Question1_Input = ({props}) => {
                 history={props.history}
                 urlNum={'1'}
                 answerText={'송악'}
-                questionText={'야생화 공원에서 다음 식물의 이름을 찾아보세요1.'}
+                questionText={'야생화 공원에서 다음 식물의 이름을 찾아보세요.'}
                 titleImg={titleImg}
                 title={props.location.state.title}
                 title2={props.location.state.title2}

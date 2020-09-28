@@ -8,23 +8,38 @@ import MainComponent from "./components/MainComponent";
 
 import {BrowserRouter, Route, Link} from "react-router-dom"
 
-function App() {
-    return (
-        <div className="App Cont">
+class App extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: null
+    }
+  }
 
-            {/*<header className="App-header">*/}
-            <header>
-                {/*<img src={logo} className="App-logo" alt="logo" />*/}
-            </header>
-            <body>
-            {/*<BrowserRouter>*/}
-            {/*</BrowserRouter>*/}
+    componentDidMount() {
+    fetch('http://localhost:3001/api')
+      .then(res => res.json())
+      .then(data => this.setState({title: data.title}));
+  }
 
-            <MainComponent />
+   render() {
+       return (
+           <div className="App Cont">
 
-            </body>
-        </div>
-    );
+               {/*<header className="App-header">*/}
+               <header>
+                   {/*<img src={logo} className="App-logo" alt="logo" />*/}
+               </header>
+               <body>
+               {/*<BrowserRouter>*/}
+               {/*</BrowserRouter>*/}
+
+               <MainComponent/>
+
+               </body>
+           </div>
+       );
+   }
 }
 
 export default App;
