@@ -83,35 +83,35 @@ class MainComponent extends Component {
                         <Route path='/1/input' component={Question1_Input}/>
                         <Route path='/1/wrong' component={Question1_wrong}/>
                         <Route path='/1/correct' component={Question1_answer}/>
-                        <Route exact path='/1' component={Question1_main}/>
+                        <Route path='/1' component={Question1_main}/>
 
-                        <Route exact path='/2' component={Question2_main}/>
-                        <Route exact path='/2/input' component={Question2_Input}/>
-                        <Route exact path='/2/wrong' component={Question2_wrong}/>
-                        <Route exact path='/2/correct' component={Question2_answer}/>
-                        <Route exact path='/2/hint' component={Question2_hint}/>
+                        <Route path='/2' component={Question2_main}/>
+                        <Route path='/2/input' component={Question2_Input}/>
+                        <Route path='/2/wrong' component={Question2_wrong}/>
+                        <Route path='/2/correct' component={Question2_answer}/>
+                        <Route path='/2/hint' component={Question2_hint}/>
 
-                        <Route exact path='/3' component={Question3_main}/>
-                        <Route exact path='/3/input' component={Question3_Input}/>
-                        <Route exact path='/3/wrong' component={Question3_wrong}/>
-                        <Route exact path='/3/correct' component={Question3_answer}/>
+                        <Route path='/3' component={Question3_main}/>
+                        <Route path='/3/input' component={Question3_Input}/>
+                        <Route path='/3/wrong' component={Question3_wrong}/>
+                        <Route path='/3/correct' component={Question3_answer}/>
 
-                        <Route exact path='/3_2' component={Question3_2_main}/>
-                        <Route exact path='/3_2/input' component={Question3_2_Input}/>
-                        <Route exact path='/3_2/wrong' component={Question3_2_wrong}/>
-                        <Route exact path='/3_2/correct' component={Question3_2_answer}/>
+                        <Route path='/3_2' component={Question3_2_main}/>
+                        <Route path='/3_2/input' component={Question3_2_Input}/>
+                        <Route path='/3_2/wrong' component={Question3_2_wrong}/>
+                        <Route path='/3_2/correct' component={Question3_2_answer}/>
 
 
-                        <Route exact path='/4' component={Question4_main}/>
-                        <Route exact path='/4/input' component={Question4_Input}/>
-                        <Route exact path='/4/wrong' component={Question4_wrong}/>
-                        <Route exact path='/4/correct' component={Question4_answer}/>
+                        <Route path='/4' component={Question4_main}/>
+                        <Route path='/4/input' component={Question4_Input}/>
+                        <Route path='/4/wrong' component={Question4_wrong}/>
+                        <Route path='/4/correct' component={Question4_answer}/>
 
-                        <Route exact path='/5' component={Question5_main}/>
-                        <Route exact path='/5/input' component={Question5_Input}/>
-                        <Route exact path='/5/wrong' component={Question5_wrong}/>
-                        <Route exact path='/5/correct' component={Question5_answer}/>
-                        <Route exact path='/5/hint' component={Question5_hint}/>
+                        <Route path='/5' component={Question5_main}/>
+                        <Route path='/5/input' component={Question5_Input}/>
+                        <Route path='/5/wrong' component={Question5_wrong}/>
+                        <Route path='/5/correct' component={Question5_answer}/>
+                        <Route path='/5/hint' component={Question5_hint}/>
 
 
                         <Redirect path='*' to='/main'/>

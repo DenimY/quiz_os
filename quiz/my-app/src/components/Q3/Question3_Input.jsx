@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styled from 'styled-components'
 
 import Question_Input from "../defaultTemplate/Question_Input";
+import titleImg from "../../images/Q1/Title@2x.png";
 
 
 
@@ -22,7 +23,7 @@ const Question3_Input = (props) => {
             <Question_Input
                 title={props.location.state.title}
                 title2={props.location.state.title2}
-                titleImg={props.location.state.titleImg}
+                titleImg={titleImg}
                 history={props.history}
                 urlNum= {'3'}
                 answerText={'새홀리기'}

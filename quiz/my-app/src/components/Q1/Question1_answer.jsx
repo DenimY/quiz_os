@@ -7,7 +7,6 @@ import answerImg from '../../images/Q1/Answer@2x.png'
 
 import Question_answer from "../defaultTemplate/Question_answer";
 import nextPageImg from '../../images/Q1/NextPage@2x.png'
-import Question_Input from "../defaultTemplate/Question_Input";
 
 
 const Question1_answerStyled = styled.div`
@@ -27,7 +26,7 @@ const Question1_answer = (props) => {
             <Question_answer
                 title={props.location.state.title}
                 title2={props.location.state.title2}
-                titleImg={props.location.state.titleImg}
+                titleImg={titleImg}
                 quizImg={quiz}
                 answer={props.location.state.answerText}
                 nextPageImg={nextPageImg}

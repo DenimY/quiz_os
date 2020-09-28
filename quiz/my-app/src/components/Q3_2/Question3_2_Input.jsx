@@ -24,7 +24,7 @@ const Question3_2_Input = (props) => {
             <Question_Input
                 title={props.location.state.title}
                 title2={props.location.state.title2}
-                titleImg={props.location.state.titleImg}
+                titleImg={titleImg}
                 // quizImg={quiz}
                 questionText={'AR을 활용하여 다른 멸종위기 동물들은\n' +
                 '무엇이 있는지 확인해보세요.\n' +

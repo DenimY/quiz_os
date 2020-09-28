@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import q from '../../images/Q1/Title@2x.png'
 import Question_Input from "../defaultTemplate/Question_Input";
 import QuestionTemplate from "../defaultTemplate/QuestionTemplate";
+import titleImg from "../../images/Q1/Title@2x.png";
 
 
 
@@ -24,7 +25,7 @@ const Question5_Input = (props) => {
             <Question_Input
                 title2={props.location.state.title2}
                 title={props.location.state.title}
-                titleImg={props.location.state.titleImg}
+                titleImg={titleImg}
                 history={props.history}
                 urlNum= {'5'}
                 answerText={'떨켜충'}
