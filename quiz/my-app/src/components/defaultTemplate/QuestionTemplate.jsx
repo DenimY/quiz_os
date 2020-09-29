@@ -96,7 +96,7 @@ const QuestionTemplate = ({title, title2, titleImg, quizImg, quizImg2, question,
                                     <input type='image' src={BtnAR} className='btn-result'/>
                                 </a>
                                 <Link to={{
-                                    pathname: '/2',
+                                    pathname: '/4',
                                     state: {
                                         title: title,
                                         title2: title2,

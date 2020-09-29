@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
 
-import titleImg from '../../images/Q2/Title@2x.png'
+import titleImg from '../../images/Q4/Title@2x.png'
 import quiz from '../../images/Q4/Quiz@2x.png'
 import answerImg from '../../images/Q4/Answer@2x.png'
 
@@ -32,7 +32,7 @@ const Question4_answer = (props) => {
                 nextPageImg={nextPageImg}
                 answerImg={answerImg}
                 answerText={'  옴개구리는 주름돌기개구리라고도 불리며 몸 길이는 4-5.5cm 가량입니다. 전국 하천에서 널리 서식하지만, 최근에는 하천의 요염으로 인해 개체수가 감소하고 있습니다.'}
-                url={'/3'}
+                url={'/5'}
 
             />
         </Question4_answerStyled>

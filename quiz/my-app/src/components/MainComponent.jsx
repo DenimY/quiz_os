@@ -7,7 +7,6 @@ import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 import StartPage from './StartPage';
 import EndPage from './EndPage';
 
-/*
 import Question1_main from './Q1/Question1_main'
 import Question1_Input from "./Q1/Question1_Input";
 import Question1_wrong from "./Q1/Question1_wrong";
@@ -19,7 +18,6 @@ import Question2_Input from "./Q2/Question2_Input";
 import Question2_wrong from "./Q2/Question2_wrong";
 import Question2_answer from "./Q2/Question2_answer";
 import Question2_hint from "./Q2/Question2_hint";
-*/
 import Question3_main from './Q3/Question3_main'
 import Question3_Input from "./Q3/Question3_Input";
 import Question3_wrong from "./Q3/Question3_wrong";
@@ -76,7 +74,7 @@ class MainComponent extends Component {
                         <Route path='/main' component={StartPage}/>
                         <Route path='/end' component={EndPage}/>
 
-                        {/*<Route path='/1input' component={Question1_Input}/>
+                        <Route path='/1input' component={Question1_Input}/>
                         <Route path='/1wrong' component={Question1_wrong}/>
                         <Route path='/1correct' component={Question1_answer}/>
                         <Route path='/1' component={Question1_main}/>
@@ -85,29 +83,29 @@ class MainComponent extends Component {
                         <Route path='/2input' component={Question2_Input}/>
                         <Route path='/2wrong' component={Question2_wrong}/>
                         <Route path='/2correct' component={Question2_answer}/>
-                        <Route path='/2hint' component={Question2_hint}/>*/}
+                        <Route path='/2hint' component={Question2_hint}/>
 
-                        <Route path='/1' component={Question3_main}/>
-                        <Route path='/1input' component={Question3_Input}/>
-                        <Route path='/1wrong' component={Question3_wrong}/>
-                        <Route path='/1correct' component={Question3_answer}/>
+                        <Route path='/3' component={Question3_main}/>
+                        <Route path='/3input' component={Question3_Input}/>
+                        <Route path='/3wrong' component={Question3_wrong}/>
+                        <Route path='/3correct' component={Question3_answer}/>
 
-                        <Route path='/1_2' component={Question3_2_main}/>
-                        <Route path='/1_2input' component={Question3_2_Input}/>
-                        <Route path='/1_2wrong' component={Question3_2_wrong}/>
-                        <Route path='/1_2correct' component={Question3_2_answer}/>
+                        <Route path='/3_2' component={Question3_2_main}/>
+                        <Route path='/3_2input' component={Question3_2_Input}/>
+                        <Route path='/3_2wrong' component={Question3_2_wrong}/>
+                        <Route path='/3_2correct' component={Question3_2_answer}/>
 
 
-                        <Route path='/2' component={Question4_main}/>
-                        <Route path='/2input' component={Question4_Input}/>
-                        <Route path='/2wrong' component={Question4_wrong}/>
-                        <Route path='/2correct' component={Question4_answer}/>
+                        <Route path='/4' component={Question4_main}/>
+                        <Route path='/4input' component={Question4_Input}/>
+                        <Route path='/4wrong' component={Question4_wrong}/>
+                        <Route path='/4correct' component={Question4_answer}/>
 
-                        <Route path='/3' component={Question5_main}/>
-                        <Route path='/3input' component={Question5_Input}/>
-                        <Route path='/3wrong' component={Question5_wrong}/>
-                        <Route path='/3correct' component={Question5_answer}/>
-                        <Route path='/3hint' component={Question5_hint}/>
+                        <Route path='/5' component={Question5_main}/>
+                        <Route path='/5input' component={Question5_Input}/>
+                        <Route path='/5wrong' component={Question5_wrong}/>
+                        <Route path='/5correct' component={Question5_answer}/>
+                        <Route path='/5hint' component={Question5_hint}/>
 
 
                         <Redirect path='*' to='/main'/>

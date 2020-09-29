@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
 
-import titleImg from '../../images/Q1/Title@2x.png'
+import titleImg from '../../images/Q3/Title@2x.png'
 import quiz from '../../images/Q3/Quiz@2x.png'
 import answerImg from '../../images/Q3/Answer@2x.png'
 
@@ -35,7 +35,7 @@ const Question3_answer = (props) => {
                 '2급으로 지정되어 보호받는 새입니다.\n' +
                 '매와 아주 비슷하게 생겼지만 크기가 조금 더 작고,\n' +
                 '배에 붉은 색을 띄고 있습니다.'}
-                url={'/1_2'}
+                url={'/3_2'}
 
             />
         </Question3_answerStyled>

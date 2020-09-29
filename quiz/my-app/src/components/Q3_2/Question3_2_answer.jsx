@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
 
-import titleImg from '../../images/Q1/Title@2x.png'
+import titleImg from '../../images/Q3/Title@2x.png'
 import quiz from '../../images/Q3/Quiz@2x.png'
 
 import Question_answer from "../defaultTemplate/Question_answer";
@@ -34,7 +34,7 @@ const Question3_2_answer = (props) => {
                 '식하는 멸종 위기 동물입니다. 야생동물들이 야\n' +
                 '생에서 잘 살아갈 수 있도록, 환경을 파괴하지 않\n' +
                 '고 보존하는 것이 중요합니다.'}
-                url={'/2'}
+                url={'/4'}
                 type={'B'}
             />
         </Question3_answerStyled>

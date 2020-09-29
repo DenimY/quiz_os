@@ -1,7 +1,7 @@
 import React from "react";
 
 //image
-import titleImg from '../../images/Q3/Title@2x.png'
+import titleImg from '../../images/Q5/Title@2x.png'
 import quiz from '../../images/Q5/Quiz@2x.png'
 import quiz2 from '../../images/Q5/Quiz2@2x.png'
 
@@ -15,7 +15,7 @@ const Question5_main = () => {
     return (
         <>
             <QuestionTemplate
-                title={'세 번째 장소,'}
+                title={'다섯 번째 장소,'}
                 title2={'단풍이 드는 이유'}
                 titleImg={titleImg}
                 quizImg={quiz}
@@ -24,7 +24,7 @@ const Question5_main = () => {
                 map={map}
                 mapText={'연못 옆 계단을 내려와 경사길을 따라오세요.\n \'단풍이 드는 이유\'안내판을 찾아보세요!'}
                 hintUrl={'/5hint'}
-                url={'/3input'}
+                url={'/5input'}
             />
         </>
     )
