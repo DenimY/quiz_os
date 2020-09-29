@@ -19,9 +19,9 @@ const Question_Input = ({history, urlNum, answerText, questionText, titleImg, ti
         if (e.key === 'Enter') {
             let url = '';
             if (answer.trim() === answerText) {
-                url = '/' + sUrlNum + '/correct'
+                url = '/' + sUrlNum + 'correct'
             } else {
-                url = '/' + sUrlNum + '/wrong'
+                url = '/' + sUrlNum + 'wrong'
             }
 
             history.push({

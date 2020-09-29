@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
 
-import titleImg from '../../images/Q5/Title@2x.png'
+import titleImg from '../../images/Q3/Title@2x.png'
 
 import Question_answer from "../defaultTemplate/Question_answer";
 import nextPageImg from '../../images/Q5/NextPage@2x.png'
@@ -27,7 +27,7 @@ const Question5_answer = (props) => {
                 titleImg={titleImg}
                 answer={props.location.state.answerText}
                 nextPageImg={nextPageImg}
-                answerText={'떨켜충은 잎이 가지에서 분리되는 지점입니다. 가을이 되어 기온이 낮아지면, 떨켜충의 세포벽이 녹으면서 잎이 가지에서 떨어진답니다.'}
+                answerText={'떨켜층은 잎이 가지에서 분리되는 지점입니다. 가을이 되어 기온이 낮아지면, 떨켜층 세포벽이 녹으면서 잎이 가지에서 떨어진답니다.'}
                 url={'/end'}
 
             />

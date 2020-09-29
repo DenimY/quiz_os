@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import styled from 'styled-components'
 
 import btn1 from '../../images/common/InputAnswer@2x.png'
@@ -18,7 +18,7 @@ img{
 }
 `
 
-const QuestionTemplate = ({title, title2, titleImg, quizImg, quizImg2, question, hint, map, mapText, hintUrl, url, BtnAR}) => {
+const QuestionTemplate = ({title, title2, titleImg, quizImg, quizImg2, question, hint, map, mapText, hintUrl, url, BtnAR, nexturl}) => {
 
     /*const [inputUrl, setInputUrl] = ("");
     const [hintUrl, setHintUrl] = ("");
@@ -92,11 +92,11 @@ const QuestionTemplate = ({title, title2, titleImg, quizImg, quizImg2, question,
                     {BtnAR}.BtnAR === undefined ?
                         (<></>) : (
                             <>
-                                <a href={'https://uplusar.page.link/ZWPp'}>
+                                <a href={'https://bit.ly/3h7qBqy'}>
                                     <input type='image' src={BtnAR} className='btn-result'/>
                                 </a>
                                 <Link to={{
-                                    pathname: url,
+                                    pathname: '/2',
                                     state: {
                                         title: title,
                                         title2: title2,

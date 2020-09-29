@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
 //image
 import titleImg from '../../images/Q2/Title@2x.png'
@@ -25,8 +25,8 @@ const Question1_main = () => {
                 }
                 map={map}
                 mapText={'야생화공원의 길을 따라 8도 소나무 단지에서 \'정이품송 맏아들나무\'안내판을 찾아보세요!'}
-                hintUrl={'/2/hint'}
-                url={'/2/input'}
+                hintUrl={'/2hint'}
+                url={'/2input'}
             />
         </>
     )

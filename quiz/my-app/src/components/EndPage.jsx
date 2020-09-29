@@ -109,7 +109,7 @@ const EndPage = () => {
                 <div className={'footer-body'}>
                     <div className='input-answer' style={{display: "flex", flexDirection: "column", margin: "auto", padding: 0}}>
                         <input type='image' src={eyesOne} className='btn-result' onClick={() => {
-                            window.open('https://uplusar.page.link/z9uL', "_blank");
+                            window.open('https://bit.ly/3kNKDIE', "_blank");
                         }}/>
                     </div>
 

@@ -1,10 +1,9 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
 //image
-import titleImg from '../../images/Q3/Title@2x.png'
+import titleImg from '../../images/Q1/Title@2x.png'
 // import quiz from '../../images/Q3_2/Quiz@2x.png'
 import BtnAR from '../../images/Q3_2/AR@2x.png'
-
 
 
 import QuestionTemplate from '../defaultTemplate/QuestionTemplate'
@@ -22,7 +21,8 @@ const Question3_2_main = () => {
                 '무엇이 있는지 확인해보세요.\n' +
                 '그리고 이 중 멸종위기인 조류를 확인하고\n' +
                 '이 조류는 어디에 서식하는지 맞춰보세요!'}
-                url={'/3_2/input'}
+                url={'/1_2input'}
+                nexturl={'/2'}
                 BtnAR={BtnAR}
             />
         </>

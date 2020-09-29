@@ -102,7 +102,7 @@ const StartPage = () => {
                             <input style={{top: '15px'}} type='image' src={QuestStartBtn} className='btn-result'/>
                         </Link>
                         <input type='image' src={pangsuBtn} className='btn-result' onClick={() => {
-                            window.open('https://uplusar.page.link/arsF', "_blank");
+                            window.open('https://bit.ly/2FVUOwj', "_blank");
                         }}/>
                         <Link to={'/1'}>
                             <span style={{textDecoration: "underline", bottom: "5px", color: 'white', position: "relative", marginTop: '10px', zIndex: '9999'}}>펭수가 안보여요</span>
