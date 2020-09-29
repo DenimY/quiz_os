@@ -22,7 +22,7 @@ const Question1_wrong = (props) => {
                 title={props.location.state.title}
                 title2={props.location.state.title2}
                 titleImg={titleImg}
-                wrongText={'다리 근처의 팻말을 잘 살펴보자!'}
+                wrongText={'과명 속에 정답이 있습니다.'}
                 url={'/1'}
             />
 

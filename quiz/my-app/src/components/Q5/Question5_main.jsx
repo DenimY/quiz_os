@@ -20,7 +20,7 @@ const Question5_main = () => {
                 titleImg={titleImg}
                 quizImg={quiz}
                 quizImg2={quiz2}
-                question={'아래의 그림에서 a, b를 유추하고, 남산공원에서 \'단푼이 드는 이유\'라는 안내판을 찾아보세요.\n이 안내판의 a번째 줄, b번째 단어는 무엇일까요?'}
+                question={'아래의 그림에서 a, b를 유추하고, 남산공원에서 \'단풍이 드는 이유\'라는 안내판을 찾아보세요.\n이 안내판의 a번째 줄, b번째 단어는 무엇일까요?'}
                 map={map}
                 mapText={'연못 옆 계단을 내려와 경사길을 따라오세요.\n \'단풍이 드는 이유\'안내판을 찾아보세요!'}
                 hintUrl={'/5hint'}

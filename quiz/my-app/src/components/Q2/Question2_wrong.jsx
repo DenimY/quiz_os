@@ -22,7 +22,7 @@ const Question2_wrong = (props) => {
                 title={props.location.state.title}
                 title2={props.location.state.title2}
                 titleImg={titleImg}
-                wrongText={'정답은 숫자입니다!'}
+                wrongText={'정답은 세 자리 숫자입니다'}
                 url={'/2'}
                 useHint={true}
             />

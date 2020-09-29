@@ -25,7 +25,7 @@ const Question5_Input = (props) => {
                 history={props.history}
                 urlNum={'5'}
                 answerText={'떨켜층'}
-                questionText={'아래의 그림에서 a, b를 유추하고, 남산공원에서 \'단푼이 드는 이유\'라는 안내판을 찾아보세요.\n이 안내판의 a번째 줄, b번째 단어는 무엇일까요?'}
+                questionText={'아래의 그림에서 a, b를 유추하고, 남산공원에서 \'단풍이 드는 이유\'라는 안내판을 찾아보세요.\n이 안내판의 a번째 줄, b번째 단어는 무엇일까요?'}
             />
 
         </Question5_InputStyled>
