@@ -30,10 +30,10 @@ const Question3_2_answer = (props) => {
                 answer={props.location.state.answerText}
                 nextPageImg={nextPageImg}
                 // answerImg={answerImg}
-                answerText={'새홀리기처럼, 스픽스 마코 앵무새는 브라질에서 서\n' +
-                '식하는 멸종 위기 동물입니다. 야생동물들이 야\n' +
-                '생에서 잘 살아갈 수 있도록, 환경을 파괴하지 않\n' +
-                '고 보존하는 것이 중요합니다.'}
+                answerText={'AR을 활용하여 다른 멸종위기 동물들은 \n' +
+                '무엇이 있는지 확인해보세요. 이 중 멸종위기인 \n' +
+                '조류를 확인하고, 이 조류는 어디에 서식하는지 \n' +
+                '확인해보세요!\n'}
                 url={'/4'}
                 type={'B'}
             />

@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import styled from 'styled-components'
 
-import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
+import {HashRouter, Redirect, Route, Switch} from "react-router-dom";
 
 
 import StartPage from './StartPage';
@@ -33,6 +33,7 @@ import Question4_main from './Q4/Question4_main'
 import Question4_Input from "./Q4/Question4_Input";
 import Question4_wrong from "./Q4/Question4_wrong";
 import Question4_answer from "./Q4/Question4_answer";
+import Question4_hint from "./Q4/Question2_hint";
 
 
 import Question5_main from './Q5/Question5_main'
@@ -69,7 +70,7 @@ class MainComponent extends Component {
                 }}>
 
                 </div>
-                <BrowserRouter>
+                <HashRouter>
                     <Switch>
                         <Route path='/main' component={StartPage}/>
                         <Route path='/end' component={EndPage}/>
@@ -100,6 +101,7 @@ class MainComponent extends Component {
                         <Route path='/4input' component={Question4_Input}/>
                         <Route path='/4wrong' component={Question4_wrong}/>
                         <Route path='/4correct' component={Question4_answer}/>
+                        <Route path='/4hint' component={Question4_hint}/>
 
                         <Route path='/5' component={Question5_main}/>
                         <Route path='/5input' component={Question5_Input}/>
@@ -110,7 +112,7 @@ class MainComponent extends Component {
 
                         <Redirect path='*' to='/main'/>
                     </Switch>
-                </BrowserRouter>
+                </HashRouter>
             </MainComponentStyled>
         )
     }

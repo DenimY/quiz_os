@@ -22,7 +22,7 @@ width: 100%;
 const Question4_answer = (props) => {
 
     return (
-        <Question4_answerStyled>
+        <>
             <Question_answer
                 title={props.location.state.title}
                 title2={props.location.state.title2}
@@ -35,7 +35,7 @@ const Question4_answer = (props) => {
                 url={'/5'}
 
             />
-        </Question4_answerStyled>
+        </>
     )
 
 

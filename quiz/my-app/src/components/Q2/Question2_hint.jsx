@@ -1,5 +1,4 @@
 import React from "react";
-import styled from 'styled-components'
 
 import Question_hint from "../defaultTemplate/Question_hint";
 import titleImg from "../../images/Q2/Title@2x.png";
@@ -15,7 +14,8 @@ const Question2_hint = (props) => {
                 title2={props.location.state.title2}
                 titleImg={titleImg}
                 hintImg={hintImg}
-                hintText={'숫자로 생각해볼까요?\n영, 일, 이, 삼, ... 십까지 세어보세요.'}
+                hintText={'숫자로 생각해볼까요?\n영, 일, 이, 삼, ... 십까지 세어보세요.\n' +
+                '그러면 정답은, ■◆▲ = 103 입니다.'}
                 url={'/2'}
 
             />

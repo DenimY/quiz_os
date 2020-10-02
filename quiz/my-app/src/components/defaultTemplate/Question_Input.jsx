@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styled from 'styled-components'
 
 import TitleTemplate from "./TitleTemplate";
+import {useHistory} from "react-router-dom";
 
 const Question_InputStyled = styled.div`
 height: 100%;
@@ -11,9 +12,11 @@ flex-direction: column;
 
 `
 
-const Question_Input = ({history, urlNum, answerText, questionText, titleImg, title, title2}) => {
+const Question_Input = ({urlNum, answerText, questionText, titleImg, title, title2}) => {
 
     const [answer, setAnswer] = useState("");
+    let history = useHistory();
+
     const handleKeyPress = (e) => {
         let sUrlNum = {urlNum}.urlNum
         if (e.key === 'Enter') {

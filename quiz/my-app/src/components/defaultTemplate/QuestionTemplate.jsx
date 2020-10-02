@@ -55,7 +55,7 @@ const QuestionTemplate = ({title, title2, titleImg, quizImg, quizImg2, question,
                             (<div className={'imgDiv'}>
                                 <img src={quizImg}>
                                 </img>
-                                <div style={{width :'20px'}}></div>
+                                <div style={{width: '20px'}}></div>
                                 <img src={quizImg2}>
                                 </img>
                             </div>)
@@ -67,9 +67,11 @@ const QuestionTemplate = ({title, title2, titleImg, quizImg, quizImg2, question,
                                 </div>)
                     }
 
-                    <p className='hint-text'>
-                        {hint}
-                    </p>
+                    <pre className='textBox'>
+                    <span className='question' style={{fontSize: '13px'}}>
+                            {hint}
+                    </span>
+                    </pre>
                 </div>
                 <div>
 
@@ -103,7 +105,7 @@ const QuestionTemplate = ({title, title2, titleImg, quizImg, quizImg2, question,
                                         titleImg: titleImg,
                                     }
                                 }}>
-                                    <span className={'aHrefText'}>AR이 안보여요</span>
+                                    <span className={'aHrefText'}>넘어가기</span>
                                 </Link>
 
                             </>
